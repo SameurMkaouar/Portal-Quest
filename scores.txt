@@ -1,0 +1,7 @@
+yassine 99 100
+sameur 100 100
+sirine 0 0
+oumayma -2 -2
+chams -50 -3
+hacker 999 999
+
