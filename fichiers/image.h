@@ -51,6 +51,7 @@ typedef struct
 	image options_title, black_70opacity, groupnames, slider_music, slider_button_music, slider_chunk, slider_button_chunk, displaymode_box; 
 }image_bouton; 
 void initialiser_image_bouton(image *imgbtn, int x, int y, char nomImage[]);
+void initialiser_image_sprite(image *imgbtn, int x, int y, int h, int w, char nomImage[]);
 void liberer_bouton(image_bouton bouton);
 
 

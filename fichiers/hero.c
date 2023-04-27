@@ -53,7 +53,7 @@ void initPerso(personne *p)
 	initialiser_texte_score(&p->score_text,700,30);//a changer position texte
 	//mvt
 	p->saut=0;
-        p->vitesse=0.5;
+        p->vitesse=5;
 	p->acceleration=0;
 	//bool
 	/*p->danger=false;

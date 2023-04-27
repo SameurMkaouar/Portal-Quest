@@ -156,6 +156,23 @@ void initialiser_image_bouton(image *imgbtn, int x, int y, char nomImage[]) //ch
        (*imgbtn).pos_img_ecran.x=x;
        (*imgbtn).pos_img_ecran.y=y;
 }
+void initialiser_image_sprite(image *imgbtn, int x, int y,int h, int w, char nomImage[]) //chargement des images background
+{   
+	(*imgbtn).url=nomImage;
+	(*imgbtn).img=IMG_Load((*imgbtn).url);
+	if((*imgbtn).img == NULL)
+	{
+	    printf("unable to load background image %s \n",SDL_GetError());
+	    return;
+	}
+       (*imgbtn).pos_img_affiche.x=0;
+       (*imgbtn).pos_img_affiche.y=0;
+       (*imgbtn).pos_img_affiche.w=w;
+       (*imgbtn).pos_img_affiche.h=h;
+       (*imgbtn).pos_img_ecran.x=x;
+       (*imgbtn).pos_img_ecran.y=y;
+}
+
 void liberer_bouton(image_bouton bouton)
 {
 //CLICKED
