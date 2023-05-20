@@ -1,0 +1,525 @@
+\hypertarget{background_8h}{}\section{background.\+h File Reference}
+\label{background_8h}\index{background.\+h@{background.\+h}}
+
+
+background file  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}audio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}hero.\+h\char`\"{}}\newline
+Include dependency graph for background.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structentity}{entity}
+\item 
+struct \hyperlink{structbackground}{background}
+\item 
+struct \hyperlink{structscoreInfo}{score\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{background_8h_ae282020fed29b34050d9c3767f3a898b}{init\+Back} (\hyperlink{structbackground}{background} $\ast$b)
+\begin{DoxyCompactList}\small\item\em To initialize the background b . \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_ae7e171b72a0a8b2bf4202cc421a56070}{afficher\+Back} (\hyperlink{structbackground}{background} b, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the background . \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a1da5e7fef0c87281038c0695bf851378}{scrolling} (\hyperlink{structbackground}{background} $\ast$b, int direction, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em scrolling function. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_ad6fc78b87c353f2d81d020f5a4cbfc83}{animer\+Back} (\hyperlink{structbackground}{background} $\ast$b)
+\begin{DoxyCompactList}\small\item\em animate the background. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a12bcfcade2f4a18da439026665b49650}{save\+Score} (\hyperlink{structscoreInfo}{score\+Info} s, char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em save the player\textquotesingle{}s score. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_aaa1874811ccd5aea4aff0e848a9be923}{best\+Score} (char $\ast$file\+Name, \hyperlink{structscoreInfo}{score\+Info} t\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em tri des scores \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a8f373a16e86545f9030a42eff9b90a72}{audio\+\_\+level1} (Mix\+\_\+\+Music $\ast$music, int volume, int a)
+\begin{DoxyCompactList}\small\item\em To handle the level1 music. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a4cc9ee54c251456e8bc808c75180eab2}{audio\+\_\+level2} (Mix\+\_\+\+Music $\ast$music, int volume)
+\begin{DoxyCompactList}\small\item\em To handle the seconde level music. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a44847f5364a68b4a42f00ec4fcf0356d}{initialiser\+\_\+image\+\_\+leaderboard} (\hyperlink{structimage}{image} $\ast$imgbtn, int x, int y, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize the leaderboard image. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_abd67e38110c5d24cff468c894004c991}{initialiser\+\_\+image\+\_\+garbage\+\_\+moving} (\hyperlink{structimage}{image} $\ast$imgbtn, int x, int y, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize the garbage image. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a7554b7b2d171d92a5dedd5a68fdeffd5}{initialiser\+\_\+image\+\_\+junkpit} (\hyperlink{structimage}{image} $\ast$imgbtn, int x, int y, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize the junkpit image. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_aa7c93850e39407a916d439ae57ae0a66}{initialiser\+\_\+akaros} (\hyperlink{structimage}{image} $\ast$imgbtn, int x, int y, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize Akaros image. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_aa4faea7569ef5c49467e8923d6e0f309}{init\+Entity} (\hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em To initialize entities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{background_8h_adad81eb366f59d86563a9b04d79c973d}\label{background_8h_adad81eb366f59d86563a9b04d79c973d}} 
+void {\bfseries shake\+\_\+screen} (S\+D\+L\+\_\+\+Surface $\ast$screen, int intensity, int duration)
+\item 
+void \hyperlink{background_8h_a5d72db3fe37daa22f59d98ee00484a27}{shake\+\_\+image} (\hyperlink{structimage}{image} $\ast$img, int intensity, int duration, \hyperlink{structbackground}{background} b, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em A function that shakes the screen. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a36b5365f2c23fc8bb6c14a75d7fdbbb8}{projectiles\+\_\+movement} (\hyperlink{structbackground}{background} $\ast$b, int direction, int \hyperlink{hero_8h_a3d9b7bcbd495ee342902ec003e6ac1bf}{saut})
+\begin{DoxyCompactList}\small\item\em To handle the movements of the projectiles. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a37cb67a25022bc606edfed15ab84650a}{end\+\_\+game} (\hyperlink{structimage}{image} $\ast$img1, \hyperlink{structimage}{image} $\ast$img2, int intensite, int duree, \hyperlink{structbackground}{background} b, S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structimage}{image} $\ast$tab\+\_\+white, \hyperlink{structpersonne}{personne} p)
+\begin{DoxyCompactList}\small\item\em the animation of the game ending \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a41e37a5567bf1b57597a99adf2356447}{initialiser\+\_\+white} (\hyperlink{structimage}{image} $\ast$tab\+\_\+white)
+\begin{DoxyCompactList}\small\item\em To initialize image. \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a0419f0d4cbc1ebdb2aabca325b3766ac}{float\+\_\+items} (\hyperlink{structbackground}{background} $\ast$b, float $\ast$angle\+\_\+ptr, float frequency, float amplitude, float speed)
+\begin{DoxyCompactList}\small\item\em controls the motion of certain objects using sin funciton \end{DoxyCompactList}\item 
+void \hyperlink{background_8h_a12a6de5b89f5ed7ab741fcba5b58cb10}{circular\+\_\+motion} (\hyperlink{structimage}{image} $\ast$img1, \hyperlink{structimage}{image} $\ast$img2, \hyperlink{structimage}{image} $\ast$img3, float $\ast$angle\+\_\+ptr, float radius, float angular\+\_\+speed, float center\+\_\+x, float center\+\_\+y)
+\begin{DoxyCompactList}\small\item\em contorls the motion of certain objects in the game that follows a circular path \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+background file 
+
+\begin{DoxyAuthor}{Author}
+Yassine Kharrat 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 03, 2023
+\end{DoxyDate}
+Ici figure le fichier \hyperlink{structbackground_a79458e48b5c7a6f0c54df249d4029e0c}{background.\+h} dans lequel il y\textquotesingle{}a les fonctions du background 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{background_8h_ae7e171b72a0a8b2bf4202cc421a56070}\label{background_8h_ae7e171b72a0a8b2bf4202cc421a56070}} 
+\index{background.\+h@{background.\+h}!afficher\+Back@{afficher\+Back}}
+\index{afficher\+Back@{afficher\+Back}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Back()}{afficherBack()}}
+{\footnotesize\ttfamily void afficher\+Back (\begin{DoxyParamCaption}\item[{\hyperlink{structbackground}{background}}]{b,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To show the background . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the background \\
+\hline
+{\em surface} & screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_ad6fc78b87c353f2d81d020f5a4cbfc83}\label{background_8h_ad6fc78b87c353f2d81d020f5a4cbfc83}} 
+\index{background.\+h@{background.\+h}!animer\+Back@{animer\+Back}}
+\index{animer\+Back@{animer\+Back}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{animer\+Back()}{animerBack()}}
+{\footnotesize\ttfamily void animer\+Back (\begin{DoxyParamCaption}\item[{\hyperlink{structbackground}{background} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+animate the background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the background \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a8f373a16e86545f9030a42eff9b90a72}\label{background_8h_a8f373a16e86545f9030a42eff9b90a72}} 
+\index{background.\+h@{background.\+h}!audio\+\_\+level1@{audio\+\_\+level1}}
+\index{audio\+\_\+level1@{audio\+\_\+level1}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{audio\+\_\+level1()}{audio\_level1()}}
+{\footnotesize\ttfamily void audio\+\_\+level1 (\begin{DoxyParamCaption}\item[{Mix\+\_\+\+Music $\ast$}]{music,  }\item[{int}]{volume,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+To handle the level1 music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em music} & \\
+\hline
+{\em volume} & \\
+\hline
+{\em a} & is a control variable which decides which music to play \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a4cc9ee54c251456e8bc808c75180eab2}\label{background_8h_a4cc9ee54c251456e8bc808c75180eab2}} 
+\index{background.\+h@{background.\+h}!audio\+\_\+level2@{audio\+\_\+level2}}
+\index{audio\+\_\+level2@{audio\+\_\+level2}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{audio\+\_\+level2()}{audio\_level2()}}
+{\footnotesize\ttfamily void audio\+\_\+level2 (\begin{DoxyParamCaption}\item[{Mix\+\_\+\+Music $\ast$}]{music,  }\item[{int}]{volume }\end{DoxyParamCaption})}
+
+
+
+To handle the seconde level music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em music} & \\
+\hline
+{\em volume} & \\
+\hline
+{\em a} & is a control variable which decides which music to play \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_aaa1874811ccd5aea4aff0e848a9be923}\label{background_8h_aaa1874811ccd5aea4aff0e848a9be923}} 
+\index{background.\+h@{background.\+h}!best\+Score@{best\+Score}}
+\index{best\+Score@{best\+Score}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{best\+Score()}{bestScore()}}
+{\footnotesize\ttfamily void best\+Score (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name,  }\item[{\hyperlink{structscoreInfo}{score\+Info}}]{t\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+tri des scores 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & fichier de sauvgarde \\
+\hline
+{\em $\ast$t} & tableau pour tri \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a12a6de5b89f5ed7ab741fcba5b58cb10}\label{background_8h_a12a6de5b89f5ed7ab741fcba5b58cb10}} 
+\index{background.\+h@{background.\+h}!circular\+\_\+motion@{circular\+\_\+motion}}
+\index{circular\+\_\+motion@{circular\+\_\+motion}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{circular\+\_\+motion()}{circular\_motion()}}
+{\footnotesize\ttfamily void circular\+\_\+motion (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{img1,  }\item[{\hyperlink{structimage}{image} $\ast$}]{img2,  }\item[{\hyperlink{structimage}{image} $\ast$}]{img3,  }\item[{float $\ast$}]{angle\+\_\+ptr,  }\item[{float}]{radius,  }\item[{float}]{angular\+\_\+speed,  }\item[{float}]{center\+\_\+x,  }\item[{float}]{center\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+contorls the motion of certain objects in the game that follows a circular path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & img 1 \\
+\hline
+{\em image} & img2 \\
+\hline
+{\em image} & img 3 \\
+\hline
+{\em float} & angle \\
+\hline
+{\em float} & radius \\
+\hline
+{\em angular\+\_\+speed} & \\
+\hline
+{\em centre} & de x \\
+\hline
+{\em centre} & de y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a37cb67a25022bc606edfed15ab84650a}\label{background_8h_a37cb67a25022bc606edfed15ab84650a}} 
+\index{background.\+h@{background.\+h}!end\+\_\+game@{end\+\_\+game}}
+\index{end\+\_\+game@{end\+\_\+game}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{end\+\_\+game()}{end\_game()}}
+{\footnotesize\ttfamily void end\+\_\+game (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{img1,  }\item[{\hyperlink{structimage}{image} $\ast$}]{img2,  }\item[{int}]{intensite,  }\item[{int}]{duree,  }\item[{\hyperlink{structbackground}{background}}]{b,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structimage}{image} $\ast$}]{tab\+\_\+white,  }\item[{\hyperlink{structpersonne}{personne}}]{p }\end{DoxyParamCaption})}
+
+
+
+the animation of the game ending 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & img1 \\
+\hline
+{\em a} & second image \\
+\hline
+{\em integer} & intensity \\
+\hline
+{\em integer} & duration \\
+\hline
+{\em background} & b \\
+\hline
+{\em surface} & screen \\
+\hline
+{\em tableau} & tab \\
+\hline
+{\em personne} & p \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a0419f0d4cbc1ebdb2aabca325b3766ac}\label{background_8h_a0419f0d4cbc1ebdb2aabca325b3766ac}} 
+\index{background.\+h@{background.\+h}!float\+\_\+items@{float\+\_\+items}}
+\index{float\+\_\+items@{float\+\_\+items}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{float\+\_\+items()}{float\_items()}}
+{\footnotesize\ttfamily void float\+\_\+items (\begin{DoxyParamCaption}\item[{\hyperlink{structbackground}{background} $\ast$}]{b,  }\item[{float $\ast$}]{angle\+\_\+ptr,  }\item[{float}]{frequency,  }\item[{float}]{amplitude,  }\item[{float}]{speed }\end{DoxyParamCaption})}
+
+
+
+controls the motion of certain objects using sin funciton 
+
+
+\begin{DoxyParams}{Parameters}
+{\em background} & b \\
+\hline
+{\em angle} & de type float \\
+\hline
+{\em integer} & frequency \\
+\hline
+{\em float} & amplitude \\
+\hline
+{\em float} & speed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_ae282020fed29b34050d9c3767f3a898b}\label{background_8h_ae282020fed29b34050d9c3767f3a898b}} 
+\index{background.\+h@{background.\+h}!init\+Back@{init\+Back}}
+\index{init\+Back@{init\+Back}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{init\+Back()}{initBack()}}
+{\footnotesize\ttfamily void init\+Back (\begin{DoxyParamCaption}\item[{\hyperlink{structbackground}{background} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+To initialize the background b . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & background \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_aa4faea7569ef5c49467e8923d6e0f309}\label{background_8h_aa4faea7569ef5c49467e8923d6e0f309}} 
+\index{background.\+h@{background.\+h}!init\+Entity@{init\+Entity}}
+\index{init\+Entity@{init\+Entity}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{init\+Entity()}{initEntity()}}
+{\footnotesize\ttfamily void init\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{structentity}{entity} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+To initialize entities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & e \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_aa7c93850e39407a916d439ae57ae0a66}\label{background_8h_aa7c93850e39407a916d439ae57ae0a66}} 
+\index{background.\+h@{background.\+h}!initialiser\+\_\+akaros@{initialiser\+\_\+akaros}}
+\index{initialiser\+\_\+akaros@{initialiser\+\_\+akaros}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+akaros()}{initialiser\_akaros()}}
+{\footnotesize\ttfamily void initialiser\+\_\+akaros (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imgbtn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize Akaros image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & d\textquotesingle{}akaros \\
+\hline
+{\em x} & position sur l\textquotesingle{}axe x \\
+\hline
+{\em y} & position sur l\textquotesingle{}axe y \\
+\hline
+{\em char} & le url de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_abd67e38110c5d24cff468c894004c991}\label{background_8h_abd67e38110c5d24cff468c894004c991}} 
+\index{background.\+h@{background.\+h}!initialiser\+\_\+image\+\_\+garbage\+\_\+moving@{initialiser\+\_\+image\+\_\+garbage\+\_\+moving}}
+\index{initialiser\+\_\+image\+\_\+garbage\+\_\+moving@{initialiser\+\_\+image\+\_\+garbage\+\_\+moving}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+garbage\+\_\+moving()}{initialiser\_image\_garbage\_moving()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+garbage\+\_\+moving (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imgbtn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize the garbage image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & de garbage \\
+\hline
+{\em x} & position sur l\textquotesingle{}axe x \\
+\hline
+{\em y} & position sur l\textquotesingle{}axe y \\
+\hline
+{\em char} & le url de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a7554b7b2d171d92a5dedd5a68fdeffd5}\label{background_8h_a7554b7b2d171d92a5dedd5a68fdeffd5}} 
+\index{background.\+h@{background.\+h}!initialiser\+\_\+image\+\_\+junkpit@{initialiser\+\_\+image\+\_\+junkpit}}
+\index{initialiser\+\_\+image\+\_\+junkpit@{initialiser\+\_\+image\+\_\+junkpit}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+junkpit()}{initialiser\_image\_junkpit()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+junkpit (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imgbtn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize the junkpit image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & de junkpit \\
+\hline
+{\em x} & position sur l\textquotesingle{}axe x \\
+\hline
+{\em y} & position sur l\textquotesingle{}axe y \\
+\hline
+{\em char} & le url de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a44847f5364a68b4a42f00ec4fcf0356d}\label{background_8h_a44847f5364a68b4a42f00ec4fcf0356d}} 
+\index{background.\+h@{background.\+h}!initialiser\+\_\+image\+\_\+leaderboard@{initialiser\+\_\+image\+\_\+leaderboard}}
+\index{initialiser\+\_\+image\+\_\+leaderboard@{initialiser\+\_\+image\+\_\+leaderboard}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+leaderboard()}{initialiser\_image\_leaderboard()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+leaderboard (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imgbtn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize the leaderboard image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & image de leaderboard \\
+\hline
+{\em x} & position sur l\textquotesingle{}axe x \\
+\hline
+{\em y} & position sur l\textquotesingle{}axe y \\
+\hline
+{\em char} & le url de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a41e37a5567bf1b57597a99adf2356447}\label{background_8h_a41e37a5567bf1b57597a99adf2356447}} 
+\index{background.\+h@{background.\+h}!initialiser\+\_\+white@{initialiser\+\_\+white}}
+\index{initialiser\+\_\+white@{initialiser\+\_\+white}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+white()}{initialiser\_white()}}
+{\footnotesize\ttfamily void initialiser\+\_\+white (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{tab\+\_\+white }\end{DoxyParamCaption})}
+
+
+
+To initialize image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a36b5365f2c23fc8bb6c14a75d7fdbbb8}\label{background_8h_a36b5365f2c23fc8bb6c14a75d7fdbbb8}} 
+\index{background.\+h@{background.\+h}!projectiles\+\_\+movement@{projectiles\+\_\+movement}}
+\index{projectiles\+\_\+movement@{projectiles\+\_\+movement}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{projectiles\+\_\+movement()}{projectiles\_movement()}}
+{\footnotesize\ttfamily void projectiles\+\_\+movement (\begin{DoxyParamCaption}\item[{\hyperlink{structbackground}{background} $\ast$}]{b,  }\item[{int}]{direction,  }\item[{int}]{saut }\end{DoxyParamCaption})}
+
+
+
+To handle the movements of the projectiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em backgroud} & b \\
+\hline
+{\em integer} & direction \\
+\hline
+{\em saut} & to type int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a12bcfcade2f4a18da439026665b49650}\label{background_8h_a12bcfcade2f4a18da439026665b49650}} 
+\index{background.\+h@{background.\+h}!save\+Score@{save\+Score}}
+\index{save\+Score@{save\+Score}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{save\+Score()}{saveScore()}}
+{\footnotesize\ttfamily void save\+Score (\begin{DoxyParamCaption}\item[{\hyperlink{structscoreInfo}{score\+Info}}]{s,  }\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+save the player\textquotesingle{}s score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & de type enregistrement scoreinfo \\
+\hline
+{\em file} & fichier de sauvgarde \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a1da5e7fef0c87281038c0695bf851378}\label{background_8h_a1da5e7fef0c87281038c0695bf851378}} 
+\index{background.\+h@{background.\+h}!scrolling@{scrolling}}
+\index{scrolling@{scrolling}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{scrolling()}{scrolling()}}
+{\footnotesize\ttfamily void scrolling (\begin{DoxyParamCaption}\item[{\hyperlink{structbackground}{background} $\ast$}]{b,  }\item[{int}]{direction,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+scrolling function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the background \\
+\hline
+{\em integer} & direction \\
+\hline
+{\em uint} & 32dt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{background_8h_a5d72db3fe37daa22f59d98ee00484a27}\label{background_8h_a5d72db3fe37daa22f59d98ee00484a27}} 
+\index{background.\+h@{background.\+h}!shake\+\_\+image@{shake\+\_\+image}}
+\index{shake\+\_\+image@{shake\+\_\+image}!background.\+h@{background.\+h}}
+\subsubsection{\texorpdfstring{shake\+\_\+image()}{shake\_image()}}
+{\footnotesize\ttfamily void shake\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{img,  }\item[{int}]{intensity,  }\item[{int}]{duration,  }\item[{\hyperlink{structbackground}{background}}]{b,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+A function that shakes the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & a shaker \\
+\hline
+{\em integer} & intensity \\
+\hline
+{\em integer} & duration \\
+\hline
+{\em background} & b \\
+\hline
+{\em surface} & screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

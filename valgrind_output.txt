@@ -1,0 +1,1480 @@
+==2781== Memcheck, a memory error detector
+==2781== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2781== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==2781== Command: ./prog
+==2781== Parent PID: 2035
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113A1F: main (main.c:404)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113AB1: main (main.c:412)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113B43: main (main.c:420)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113BD5: main (main.c:428)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x10C724: initBack (background.c:22)
+==2781==    by 0x1141BA: main (main.c:501)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x123B29: main (main.c:3082)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x1203B5: main (main.c:2608)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113A2C: main (main.c:404)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113ABE: main (main.c:412)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113B50: main (main.c:420)
+==2781== 
+==2781== Conditional jump or move depends on uninitialised value(s)
+==2781==    at 0x113BE2: main (main.c:428)
+==2781== 
+==2781== 
+==2781== Process terminating with default action of signal 27 (SIGPROF)
+==2781==    at 0x5BFBD5F: __open_nocancel (open64.c:69)
+==2781==    by 0x5C0F77F: write_gmon (gmon.c:370)
+==2781==    by 0x5C0FF3A: _mcleanup (gmon.c:444)
+==2781==    by 0x5B2F604: __cxa_finalize (cxa_finalize.c:83)
+==2781==    by 0x109B62: ??? (in /home/yassine/Desktop/here/prog)
+==2781==    by 0x4010D12: _dl_fini (dl-fini.c:138)
+==2781==    by 0x5B2F030: __run_exit_handlers (exit.c:108)
+==2781==    by 0x5B2F129: exit (exit.c:139)
+==2781==    by 0x5B0DC8D: (below main) (libc-start.c:344)
+==2781== 
+==2781== HEAP SUMMARY:
+==2781==     in use at exit: 1,326,082,798 bytes in 62,340 blocks
+==2781==   total heap usage: 111,715 allocs, 49,375 frees, 1,607,230,258 bytes allocated
+==2781== 
+==2781== 16 bytes in 1 blocks are possibly lost in loss record 163 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6B036: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E6C864: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x122167: main (main.c:2810)
+==2781== 
+==2781== 48 bytes in 1 blocks are possibly lost in loss record 507 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6A18A: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E6C7E6: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x122167: main (main.c:2810)
+==2781== 
+==2781== 64 bytes in 1 blocks are possibly lost in loss record 718 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6B01F: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E6C864: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x122167: main (main.c:2810)
+==2781== 
+==2781== 88 bytes in 1 blocks are possibly lost in loss record 898 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x122167: main (main.c:2810)
+==2781== 
+==2781== 192 (16 direct, 176 indirect) bytes in 1 blocks are definitely lost in loss record 1,009 of 1,652
+==2781==    at 0x4C33D2F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x688E19C: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x688E681: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x688FFEE: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x6890827: _XlcCreateLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x68AC66F: _XlcDefaultLoader (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x6897C5D: _XOpenLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x6897DAA: _XlcCurrentLC (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x6897DED: XSetLocaleModifiers (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==2781==    by 0x4E7D1AE: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E7E351: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E6EA07: SDL_VideoInit (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,021 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A06D: initialiser_animation_frog (image.c:113)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,022 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A282: initialiser_animation_frog (image.c:132)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,023 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112C6B: main (main.c:224)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,024 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112C8B: main (main.c:225)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,025 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112CAB: main (main.c:226)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,026 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112CCB: main (main.c:227)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,027 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112DEB: main (main.c:236)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,028 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112E0B: main (main.c:237)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,029 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C717: initBack (background.c:21)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,030 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C74C: initBack (background.c:24)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,031 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C78C: initBack (background.c:26)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,032 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10EABA: initialiser_image_garbage_moving (background.c:517)
+==2781==    by 0x10C7CE: initBack (background.c:28)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,033 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10CA0C: initBack (background.c:49)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,034 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C717: initBack (background.c:21)
+==2781==    by 0x1141BA: main (main.c:501)
+==2781== 
+==2781== 216 (88 direct, 128 indirect) bytes in 1 blocks are definitely lost in loss record 1,035 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x1111A6: init_back (enigme.c:119)
+==2781==    by 0x1143B4: main (main.c:537)
+==2781== 
+==2781== 320 bytes in 1 blocks are possibly lost in loss record 1,072 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4013646: allocate_dtv (dl-tls.c:286)
+==2781==    by 0x4013646: _dl_allocate_tls (dl-tls.c:530)
+==2781==    by 0x7058227: allocate_stack (allocatestack.c:627)
+==2781==    by 0x7058227: pthread_create@@GLIBC_2.2.5 (pthread_create.c:644)
+==2781==    by 0x8C9EC5C: pa_thread_new (in /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-11.1.so)
+==2781==    by 0x661F592: pa_threaded_mainloop_start (in /usr/lib/x86_64-linux-gnu/libpulse.so.0.20.2)
+==2781==    by 0x63E9B48: pa_simple_new (in /usr/lib/x86_64-linux-gnu/libpulse-simple.so.0.1.1)
+==2781==    by 0x4E75C3F: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E49172: SDL_AudioInit (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E47DFB: SDL_InitSubSystem (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E48F19: SDL_OpenAudio (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x5509166: Mix_OpenAudio (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x111F6E: main (main.c:93)
+==2781== 
+==2781== 320 bytes in 1 blocks are possibly lost in loss record 1,073 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4013646: allocate_dtv (dl-tls.c:286)
+==2781==    by 0x4013646: _dl_allocate_tls (dl-tls.c:530)
+==2781==    by 0x7058227: allocate_stack (allocatestack.c:627)
+==2781==    by 0x7058227: pthread_create@@GLIBC_2.2.5 (pthread_create.c:644)
+==2781==    by 0x4E9171C: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E522DC: SDL_CreateThread (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E93DDB: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E529DB: ??? (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E47D94: SDL_InitSubSystem (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x4E47E32: SDL_Init (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x112126: main (main.c:155)
+==2781== 
+==2781== 1,512 (616 direct, 896 indirect) bytes in 7 blocks are definitely lost in loss record 1,289 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10CB78: initBack (background.c:83)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 1,512 (616 direct, 896 indirect) bytes in 7 blocks are definitely lost in loss record 1,290 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10CB78: initBack (background.c:83)
+==2781==    by 0x1141BA: main (main.c:501)
+==2781== 
+==2781== 2,184 bytes in 1 blocks are possibly lost in loss record 1,307 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110087: MAJMinimap (minimap.c:30)
+==2781==    by 0x1222C0: main (main.c:2812)
+==2781== 
+==2781== 2,400 (88 direct, 2,312 indirect) bytes in 1 blocks are definitely lost in loss record 1,312 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CA2F: initBack (background.c:51)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 2,400 (88 direct, 2,312 indirect) bytes in 1 blocks are definitely lost in loss record 1,313 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110087: MAJMinimap (minimap.c:30)
+==2781==    by 0x12033F: main (main.c:2600)
+==2781== 
+==2781== 2,696 (88 direct, 2,608 indirect) bytes in 1 blocks are definitely lost in loss record 1,322 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C86A: initBack (background.c:33)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 2,712 (88 direct, 2,624 indirect) bytes in 1 blocks are definitely lost in loss record 1,324 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CDB4: initEntity (background.c:151)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 3,640 (88 direct, 3,552 indirect) bytes in 1 blocks are definitely lost in loss record 1,340 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x1133B9: main (main.c:346)
+==2781== 
+==2781== 3,780 (88 direct, 3,692 indirect) bytes in 1 blocks are definitely lost in loss record 1,341 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x11311A: main (main.c:282)
+==2781== 
+==2781== 4,360 (88 direct, 4,272 indirect) bytes in 1 blocks are definitely lost in loss record 1,353 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x11334F: main (main.c:335)
+==2781== 
+==2781== 4,436 (88 direct, 4,348 indirect) bytes in 1 blocks are definitely lost in loss record 1,356 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113082: main (main.c:269)
+==2781== 
+==2781== 4,440 (88 direct, 4,352 indirect) bytes in 1 blocks are definitely lost in loss record 1,357 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113384: main (main.c:341)
+==2781== 
+==2781== 4,624 (88 direct, 4,536 indirect) bytes in 1 blocks are definitely lost in loss record 1,359 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CDD5: initEntity (background.c:152)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 4,624 (88 direct, 4,536 indirect) bytes in 1 blocks are definitely lost in loss record 1,360 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CDF8: initEntity (background.c:153)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 5,040 (88 direct, 4,952 indirect) bytes in 1 blocks are definitely lost in loss record 1,363 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x1131B9: main (main.c:298)
+==2781== 
+==2781== 5,276 (88 direct, 5,188 indirect) bytes in 1 blocks are definitely lost in loss record 1,367 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113031: main (main.c:265)
+==2781== 
+==2781== 5,460 (88 direct, 5,372 indirect) bytes in 1 blocks are definitely lost in loss record 1,369 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113223: main (main.c:307)
+==2781== 
+==2781== 5,460 (88 direct, 5,372 indirect) bytes in 1 blocks are definitely lost in loss record 1,370 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x11328D: main (main.c:316)
+==2781== 
+==2781== 5,640 (88 direct, 5,552 indirect) bytes in 1 blocks are definitely lost in loss record 1,371 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113196: main (main.c:297)
+==2781== 
+==2781== 5,640 (88 direct, 5,552 indirect) bytes in 1 blocks are definitely lost in loss record 1,372 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113200: main (main.c:306)
+==2781== 
+==2781== 5,640 (88 direct, 5,552 indirect) bytes in 1 blocks are definitely lost in loss record 1,373 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x11326A: main (main.c:315)
+==2781== 
+==2781== 5,880 (88 direct, 5,792 indirect) bytes in 1 blocks are definitely lost in loss record 1,374 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x112FFC: main (main.c:259)
+==2781== 
+==2781== 5,880 (88 direct, 5,792 indirect) bytes in 1 blocks are definitely lost in loss record 1,375 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x1130C9: main (main.c:278)
+==2781== 
+==2781== 5,880 (88 direct, 5,792 indirect) bytes in 1 blocks are definitely lost in loss record 1,376 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113161: main (main.c:291)
+==2781== 
+==2781== 6,300 (88 direct, 6,212 indirect) bytes in 1 blocks are definitely lost in loss record 1,377 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x1137D2: main (main.c:380)
+==2781== 
+==2781== 7,680 (88 direct, 7,592 indirect) bytes in 1 blocks are definitely lost in loss record 1,381 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x113302: main (main.c:328)
+==2781== 
+==2781== 7,736 (88 direct, 7,648 indirect) bytes in 1 blocks are definitely lost in loss record 1,382 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C8F6: initBack (background.c:39)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 7,736 (88 direct, 7,648 indirect) bytes in 1 blocks are definitely lost in loss record 1,383 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C919: initBack (background.c:40)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,240 (88 direct, 8,152 indirect) bytes in 1 blocks are definitely lost in loss record 1,395 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CE3E: initEntity (background.c:155)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,240 (88 direct, 8,152 indirect) bytes in 1 blocks are definitely lost in loss record 1,396 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CE61: initEntity (background.c:156)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,616 (88 direct, 8,528 indirect) bytes in 1 blocks are definitely lost in loss record 1,401 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CD51: initEntity (background.c:148)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,616 (88 direct, 8,528 indirect) bytes in 1 blocks are definitely lost in loss record 1,402 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CD72: initEntity (background.c:149)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,616 (88 direct, 8,528 indirect) bytes in 1 blocks are definitely lost in loss record 1,403 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CD93: initEntity (background.c:150)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,616 (88 direct, 8,528 indirect) bytes in 1 blocks are definitely lost in loss record 1,404 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CE1B: initEntity (background.c:154)
+==2781==    by 0x10C824: initBack (background.c:31)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 8,832 bytes in 1 blocks are possibly lost in loss record 1,408 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x122167: main (main.c:2810)
+==2781== 
+==2781== 9,036 (88 direct, 8,948 indirect) bytes in 1 blocks are definitely lost in loss record 1,410 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C847: initBack (background.c:32)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 9,036 (88 direct, 8,948 indirect) bytes in 1 blocks are definitely lost in loss record 1,411 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C8B0: initBack (background.c:37)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 9,036 (88 direct, 8,948 indirect) bytes in 1 blocks are definitely lost in loss record 1,412 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C8D3: initBack (background.c:38)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 9,048 (88 direct, 8,960 indirect) bytes in 1 blocks are definitely lost in loss record 1,413 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x1201E6: main (main.c:2598)
+==2781== 
+==2781== 10,216 (88 direct, 10,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,417 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x1137F2: main (main.c:381)
+==2781== 
+==2781== 10,584 (88 direct, 10,496 indirect) bytes in 1 blocks are definitely lost in loss record 1,420 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10C26A: afficherPerso (hero.c:178)
+==2781==    by 0x120289: main (main.c:2599)
+==2781== 
+==2781== 16,408 (24 direct, 16,384 indirect) bytes in 1 blocks are definitely lost in loss record 1,431 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x55075E9: Mix_LoadWAV_RW (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x10ABA8: initialiser_audiobref (audio.c:68)
+==2781==    by 0x113E32: main (main.c:461)
+==2781== 
+==2781== 26,100 (440 direct, 25,660 indirect) bytes in 5 blocks are definitely lost in loss record 1,439 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x123C95: main (main.c:3114)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,441 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x1121DE: main (main.c:170)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,442 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10AE74: initialiser_texte_score (text.c:37)
+==2781==    by 0x113824: main (main.c:384)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,443 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10AE74: initialiser_texte_score (text.c:37)
+==2781==    by 0x10C0FA: initPerso2 (hero.c:141)
+==2781==    by 0x1141D8: main (main.c:503)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,444 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B002: initialiser_texte_leaderboard (text.c:97)
+==2781==    by 0x114200: main (main.c:505)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,445 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B002: initialiser_texte_leaderboard (text.c:97)
+==2781==    by 0x114219: main (main.c:506)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,446 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B002: initialiser_texte_leaderboard (text.c:97)
+==2781==    by 0x114232: main (main.c:507)
+==2781== 
+==2781== 30,992 bytes in 1 blocks are definitely lost in loss record 1,447 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x1142C2: main (main.c:512)
+==2781== 
+==2781== 31,500 (440 direct, 31,060 indirect) bytes in 5 blocks are definitely lost in loss record 1,448 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x123C6F: main (main.c:3113)
+==2781== 
+==2781== 31,621 (30,992 direct, 629 indirect) bytes in 1 blocks are definitely lost in loss record 1,449 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10AE74: initialiser_texte_score (text.c:37)
+==2781==    by 0x11380B: main (main.c:383)
+==2781== 
+==2781== 31,720 (30,992 direct, 728 indirect) bytes in 1 blocks are definitely lost in loss record 1,450 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10AE74: initialiser_texte_score (text.c:37)
+==2781==    by 0x10BE5D: initPerso (hero.c:70)
+==2781==    by 0x1141C9: main (main.c:502)
+==2781== 
+==2781== 33,200 (30,992 direct, 2,208 indirect) bytes in 1 blocks are definitely lost in loss record 1,453 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x112FA3: main (main.c:253)
+==2781== 
+==2781== 33,680 (30,992 direct, 2,688 indirect) bytes in 1 blocks are definitely lost in loss record 1,454 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x11332C: main (main.c:333)
+==2781== 
+==2781== 34,384 (30,992 direct, 3,392 indirect) bytes in 1 blocks are definitely lost in loss record 1,455 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x112F8B: main (main.c:252)
+==2781== 
+==2781== 37,552 (30,992 direct, 6,560 indirect) bytes in 1 blocks are definitely lost in loss record 1,462 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x112F73: main (main.c:251)
+==2781== 
+==2781== 37,942 (30,992 direct, 6,950 indirect) bytes in 1 blocks are definitely lost in loss record 1,463 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x52F78D9: TTF_OpenFontIndexRW (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x1101A6: initialiser_texte_temps (minimap.c:73)
+==2781==    by 0x1141E7: main (main.c:504)
+==2781== 
+==2781== 48,000 bytes in 2 blocks are possibly lost in loss record 1,468 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x110312: afficher_texte_temps (minimap.c:103)
+==2781==    by 0x12232B: main (main.c:2814)
+==2781== 
+==2781== 50,712 (24 direct, 50,688 indirect) bytes in 1 blocks are definitely lost in loss record 1,470 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x55075E9: Mix_LoadWAV_RW (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x110B95: initEnnemi (ennemi.c:29)
+==2781==    by 0x114292: main (main.c:510)
+==2781== 
+==2781== 76,680 (88 direct, 76,592 indirect) bytes in 1 blocks are definitely lost in loss record 1,477 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x114283: main (main.c:509)
+==2781== 
+==2781== 79,383 (32 direct, 79,351 indirect) bytes in 1 blocks are definitely lost in loss record 1,478 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x5509E5A: Mix_LoadMUSType_RW (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x550A1B0: Mix_LoadMUS (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x10A953: initialiser_audio_animation (audio.c:21)
+==2781==    by 0x1122D8: main (main.c:179)
+==2781== 
+==2781== 79,383 (32 direct, 79,351 indirect) bytes in 1 blocks are definitely lost in loss record 1,479 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x5509E5A: Mix_LoadMUSType_RW (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x550A1B0: Mix_LoadMUS (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x10A9CD: initialiser_audio_mainmenu (audio.c:31)
+==2781==    by 0x11383B: main (main.c:386)
+==2781== 
+==2781== 79,383 (32 direct, 79,351 indirect) bytes in 1 blocks are definitely lost in loss record 1,480 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x5509E5A: Mix_LoadMUSType_RW (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x550A1B0: Mix_LoadMUS (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x10ECF8: audio_level1 (background.c:594)
+==2781==    by 0x113FE9: main (main.c:483)
+==2781== 
+==2781== 79,383 (32 direct, 79,351 indirect) bytes in 1 blocks are definitely lost in loss record 1,481 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x5509E5A: Mix_LoadMUSType_RW (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x550A1B0: Mix_LoadMUS (in /usr/lib/x86_64-linux-gnu/libSDL_mixer-1.2.so.0.12.0)
+==2781==    by 0x10ECF8: audio_level1 (background.c:594)
+==2781==    by 0x12010C: main (main.c:2593)
+==2781== 
+==2781== 104,636 (88 direct, 104,548 indirect) bytes in 1 blocks are definitely lost in loss record 1,483 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112CEB: main (main.c:228)
+==2781== 
+==2781== 117,720 (88 direct, 117,632 indirect) bytes in 1 blocks are definitely lost in loss record 1,485 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A76C: initialiser_image_sprite (image.c:255)
+==2781==    by 0x114263: main (main.c:508)
+==2781== 
+==2781== 128,872 (88 direct, 128,784 indirect) bytes in 1 blocks are definitely lost in loss record 1,487 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112D2B: main (main.c:230)
+==2781== 
+==2781== 132,348 (88 direct, 132,260 indirect) bytes in 1 blocks are definitely lost in loss record 1,489 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C9A3: initBack (background.c:45)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 142,336 (88 direct, 142,248 indirect) bytes in 1 blocks are definitely lost in loss record 1,495 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112D6B: main (main.c:232)
+==2781== 
+==2781== 146,688 (88 direct, 146,600 indirect) bytes in 1 blocks are definitely lost in loss record 1,498 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112DAB: main (main.c:234)
+==2781== 
+==2781== 146,688 (88 direct, 146,600 indirect) bytes in 1 blocks are definitely lost in loss record 1,499 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112DCB: main (main.c:235)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,509 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110E98: init_dos (enigme.c:8)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,510 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110EF3: init_dos (enigme.c:19)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,511 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110F4E: init_dos (enigme.c:32)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,512 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110FA9: init_dos (enigme.c:47)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,513 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x111004: init_dos (enigme.c:61)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,514 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x11105F: init_dos (enigme.c:76)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,515 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x1110BA: init_dos (enigme.c:90)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 151,216 (88 direct, 151,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,516 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x111115: init_dos (enigme.c:105)
+==2781==    by 0x1143C3: main (main.c:537)
+==2781== 
+==2781== 172,440 (88 direct, 172,352 indirect) bytes in 1 blocks are definitely lost in loss record 1,522 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112D0B: main (main.c:229)
+==2781== 
+==2781== 173,016 (88 direct, 172,928 indirect) bytes in 1 blocks are definitely lost in loss record 1,525 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10C066: initPerso2 (hero.c:128)
+==2781==    by 0x1141D8: main (main.c:503)
+==2781== 
+==2781== 179,496 (88 direct, 179,408 indirect) bytes in 1 blocks are definitely lost in loss record 1,527 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C9C6: initBack (background.c:46)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 181,848 (88 direct, 181,760 indirect) bytes in 1 blocks are definitely lost in loss record 1,533 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112D4B: main (main.c:231)
+==2781== 
+==2781== 208,344 (88 direct, 208,256 indirect) bytes in 1 blocks are definitely lost in loss record 1,534 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C980: initBack (background.c:44)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 304,216 (88 direct, 304,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,536 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10EB67: initialiser_image_junkpit (background.c:541)
+==2781==    by 0x10C7EF: initBack (background.c:29)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 434,936 (88 direct, 434,848 indirect) bytes in 1 blocks are definitely lost in loss record 1,539 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112D8B: main (main.c:233)
+==2781== 
+==2781== 445,312 bytes in 1 blocks are possibly lost in loss record 1,540 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112CCB: main (main.c:227)
+==2781== 
+==2781== 452,096 (88 direct, 452,008 indirect) bytes in 1 blocks are definitely lost in loss record 1,542 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x114305: main (main.c:531)
+==2781== 
+==2781== 478,008 (88 direct, 477,920 indirect) bytes in 1 blocks are definitely lost in loss record 1,545 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10BD3D: initPerso (hero.c:44)
+==2781==    by 0x1141C9: main (main.c:502)
+==2781== 
+==2781== 478,008 (88 direct, 477,920 indirect) bytes in 1 blocks are definitely lost in loss record 1,546 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10BFDA: initPerso2 (hero.c:115)
+==2781==    by 0x1141D8: main (main.c:503)
+==2781== 
+==2781== 525,576 (88 direct, 525,488 indirect) bytes in 1 blocks are definitely lost in loss record 1,548 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C95D: initBack (background.c:43)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 546,264 (88 direct, 546,176 indirect) bytes in 1 blocks are definitely lost in loss record 1,551 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x112E4B: main (main.c:241)
+==2781== 
+==2781== 588,408 (88 direct, 588,320 indirect) bytes in 1 blocks are definitely lost in loss record 1,553 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10C88D: initBack (background.c:35)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 715,296 (88 direct, 715,208 indirect) bytes in 1 blocks are definitely lost in loss record 1,558 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10C188: initPerso2 (hero.c:157)
+==2781==    by 0x1141D8: main (main.c:503)
+==2781== 
+==2781== 903,152 (14,784 direct, 888,368 indirect) bytes in 168 blocks are definitely lost in loss record 1,559 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x123BF7: main (main.c:3096)
+==2781== 
+==2781== 1,049,040 (14,784 direct, 1,034,256 indirect) bytes in 168 blocks are definitely lost in loss record 1,560 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F8371: TTF_RenderUNICODE_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F8739: TTF_RenderText_Solid (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x123BD1: main (main.c:3095)
+==2781== 
+==2781== 1,178,856 (88 direct, 1,178,768 indirect) bytes in 1 blocks are definitely lost in loss record 1,562 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C76F: initBack (background.c:25)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 1,205,420 (88 direct, 1,205,332 indirect) bytes in 1 blocks are definitely lost in loss record 1,568 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x114325: main (main.c:532)
+==2781== 
+==2781== 1,205,420 (88 direct, 1,205,332 indirect) bytes in 1 blocks are definitely lost in loss record 1,569 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x114345: main (main.c:533)
+==2781== 
+==2781== 1,205,420 (88 direct, 1,205,332 indirect) bytes in 1 blocks are definitely lost in loss record 1,570 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x114365: main (main.c:534)
+==2781== 
+==2781== 1,205,420 (88 direct, 1,205,332 indirect) bytes in 1 blocks are definitely lost in loss record 1,571 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x114385: main (main.c:535)
+==2781== 
+==2781== 1,205,420 (88 direct, 1,205,332 indirect) bytes in 1 blocks are definitely lost in loss record 1,572 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x1143A5: main (main.c:536)
+==2781== 
+==2781== 1,290,240 bytes in 1 blocks are possibly lost in loss record 1,573 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x120630: main (main.c:2626)
+==2781== 
+==2781== 1,290,240 bytes in 1 blocks are possibly lost in loss record 1,574 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x12065B: main (main.c:2627)
+==2781== 
+==2781== 1,463,256 (88 direct, 1,463,168 indirect) bytes in 1 blocks are definitely lost in loss record 1,576 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10BDC9: initPerso (hero.c:57)
+==2781==    by 0x1141C9: main (main.c:502)
+==2781== 
+==2781== 1,930,456 (88 direct, 1,930,368 indirect) bytes in 1 blocks are definitely lost in loss record 1,577 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110B24: initEnnemi (ennemi.c:20)
+==2781==    by 0x114292: main (main.c:510)
+==2781== 
+==2781== 2,526,936 (88 direct, 2,526,848 indirect) bytes in 1 blocks are definitely lost in loss record 1,580 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10BC8D: initPerso (hero.c:26)
+==2781==    by 0x1141C9: main (main.c:502)
+==2781== 
+==2781== 2,526,936 (88 direct, 2,526,848 indirect) bytes in 1 blocks are definitely lost in loss record 1,581 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10BF2A: initPerso2 (hero.c:97)
+==2781==    by 0x1141D8: main (main.c:503)
+==2781== 
+==2781== 3,238,616 (88 direct, 3,238,528 indirect) bytes in 1 blocks are definitely lost in loss record 1,583 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A6B8: initialiser_image_bouton (image.c:230)
+==2781==    by 0x10CA52: initBack (background.c:52)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 3,576,480 (440 direct, 3,576,040 indirect) bytes in 5 blocks are definitely lost in loss record 1,585 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x120679: main (main.c:2629)
+==2781== 
+==2781== 3,779,816 (88 direct, 3,779,728 indirect) bytes in 1 blocks are definitely lost in loss record 1,587 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C93A: initBack (background.c:41)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,588 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A06D: initialiser_animation_frog (image.c:113)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,589 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A282: initialiser_animation_frog (image.c:132)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,590 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112C8B: main (main.c:225)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,591 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112CAB: main (main.c:226)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,592 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112DEB: main (main.c:236)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,593 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112E0B: main (main.c:237)
+==2781== 
+==2781== 4,640,000 bytes in 1 blocks are possibly lost in loss record 1,594 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10CA0C: initBack (background.c:49)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,609 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x109E58: initialiser_animation_frog (image.c:94)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,610 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x109E77: initialiser_animation_frog (image.c:95)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,611 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x109E96: initialiser_animation_frog (image.c:96)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,612 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A02F: initialiser_animation_frog (image.c:111)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,613 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A04E: initialiser_animation_frog (image.c:112)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,614 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A206: initialiser_animation_frog (image.c:128)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,615 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A225: initialiser_animation_frog (image.c:129)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,616 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A244: initialiser_animation_frog (image.c:130)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,617 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x109C33: initialiser_animation_frog_frames (image.c:54)
+==2781==    by 0x10A263: initialiser_animation_frog (image.c:131)
+==2781==    by 0x1122BD: main (main.c:178)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,618 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112C4B: main (main.c:223)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,619 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x112E2B: main (main.c:238)
+==2781== 
+==2781== 4,640,216 (88 direct, 4,640,128 indirect) bytes in 1 blocks are definitely lost in loss record 1,620 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C9E9: initBack (background.c:48)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 4,710,616 (88 direct, 4,710,528 indirect) bytes in 1 blocks are definitely lost in loss record 1,622 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C7AD: initBack (background.c:27)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 6,785,016 (248,864 direct, 6,536,152 indirect) bytes in 2,828 blocks are definitely lost in loss record 1,624 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x110087: MAJMinimap (minimap.c:30)
+==2781==    by 0x1222C0: main (main.c:2812)
+==2781== 
+==2781== 7,580,160 bytes in 3 blocks are possibly lost in loss record 1,625 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x1205D4: main (main.c:2624)
+==2781== 
+==2781== 8,585,240 (88 direct, 8,585,152 indirect) bytes in 1 blocks are definitely lost in loss record 1,626 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10EA0D: initialiser_image_leaderboard (background.c:493)
+==2781==    by 0x112C2B: main (main.c:222)
+==2781== 
+==2781== 10,107,960 (440 direct, 10,107,520 indirect) bytes in 5 blocks are definitely lost in loss record 1,627 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x12068C: main (main.c:2629)
+==2781== 
+==2781== 10,728,600 (88 direct, 10,728,512 indirect) bytes in 1 blocks are definitely lost in loss record 1,629 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10EC14: initialiser_akaros (background.c:565)
+==2781==    by 0x10C812: initBack (background.c:30)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 11,614,752 (1,056 direct, 11,613,696 indirect) bytes in 12 blocks are definitely lost in loss record 1,630 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x12065B: main (main.c:2627)
+==2781== 
+==2781== 12,904,992 (1,056 direct, 12,903,936 indirect) bytes in 12 blocks are definitely lost in loss record 1,632 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x120630: main (main.c:2626)
+==2781== 
+==2781== 14,225,696 (88 direct, 14,225,608 indirect) bytes in 1 blocks are definitely lost in loss record 1,635 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10BEEB: initPerso (hero.c:86)
+==2781==    by 0x1141C9: main (main.c:502)
+==2781== 
+==2781== 15,162,912 (1,056 direct, 15,161,856 indirect) bytes in 12 blocks are definitely lost in loss record 1,636 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x1205D4: main (main.c:2624)
+==2781== 
+==2781== 16,775,928 (1,144 direct, 16,774,784 indirect) bytes in 13 blocks are definitely lost in loss record 1,638 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x120602: main (main.c:2625)
+==2781== 
+==2781== 20,480,000 bytes in 1 blocks are possibly lost in loss record 1,639 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10EABA: initialiser_image_garbage_moving (background.c:517)
+==2781==    by 0x10C7CE: initBack (background.c:28)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 25,569,864 (248,776 direct, 25,321,088 indirect) bytes in 2,827 blocks are definitely lost in loss record 1,642 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10B06E: afficher_texte_custom (text.c:112)
+==2781==    by 0x122167: main (main.c:2810)
+==2781== 
+==2781== 29,921,168 (248,864 direct, 29,672,304 indirect) bytes in 2,828 blocks are definitely lost in loss record 1,644 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x10C26A: afficherPerso (hero.c:178)
+==2781==    by 0x12220A: main (main.c:2811)
+==2781== 
+==2781== 51,814,400 bytes in 1 blocks are possibly lost in loss record 1,645 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C717: initBack (background.c:21)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 51,814,400 bytes in 1 blocks are possibly lost in loss record 1,646 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C74C: initBack (background.c:24)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 51,814,400 bytes in 1 blocks are possibly lost in loss record 1,647 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C78C: initBack (background.c:26)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 51,814,400 bytes in 1 blocks are possibly lost in loss record 1,648 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10C717: initBack (background.c:21)
+==2781==    by 0x1141BA: main (main.c:501)
+==2781== 
+==2781== 68,796,384 (248,864 direct, 68,547,520 indirect) bytes in 2,828 blocks are definitely lost in loss record 1,650 of 1,652
+==2781==    at 0x4C31B0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C77B: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x52F922B: TTF_RenderUNICODE_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x52F9649: TTF_RenderText_Blended (in /usr/lib/x86_64-linux-gnu/libSDL_ttf-2.0.so.0.10.1)
+==2781==    by 0x110312: afficher_texte_temps (minimap.c:103)
+==2781==    by 0x12232B: main (main.c:2814)
+==2781== 
+==2781== 362,700,800 bytes in 7 blocks are possibly lost in loss record 1,651 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10CB78: initBack (background.c:83)
+==2781==    by 0x1141AB: main (main.c:501)
+==2781== 
+==2781== 362,700,800 bytes in 7 blocks are possibly lost in loss record 1,652 of 1,652
+==2781==    at 0x4C33B25: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2781==    by 0x4E6C8D4: SDL_CreateRGBSurface (in /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0.11.4)
+==2781==    by 0x50DD13A: IMG_LoadPNG_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x50D88C1: IMG_LoadTyped_RW (in /usr/lib/x86_64-linux-gnu/libSDL_image-1.2.so.0.8.4)
+==2781==    by 0x10A4AE: initialiser_image_background (image.c:172)
+==2781==    by 0x10CB78: initBack (background.c:83)
+==2781==    by 0x1141BA: main (main.c:501)
+==2781== 
+==2781== LEAK SUMMARY:
+==2781==    definitely lost: 1,476,000 bytes in 11,861 blocks
+==2781==    indirectly lost: 327,079,023 bytes in 48,494 blocks
+==2781==      possibly lost: 996,285,024 bytes in 42 blocks
+==2781==    still reachable: 1,242,751 bytes in 1,943 blocks
+==2781==         suppressed: 0 bytes in 0 blocks
+==2781== Reachable blocks (those to which a pointer was found) are not shown.
+==2781== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==2781== 
+==2781== For counts of detected and suppressed errors, rerun with: -v
+==2781== Use --track-origins=yes to see where uninitialised values come from
+==2781== ERROR SUMMARY: 482 errors from 185 contexts (suppressed: 0 from 0)

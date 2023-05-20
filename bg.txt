@@ -1,0 +1,6 @@
+bg.x 14728
+b.rose1_is_collected : 1
+b.rose2_is_collected : 1
+b.rose3_is_collected : 1
+b.heart1_is_collected : -1537956497
+b.heart2_is_collected : 21878

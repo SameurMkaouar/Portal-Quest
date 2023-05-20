@@ -1,0 +1,138 @@
+\hypertarget{hero_8c}{}\section{hero.\+c File Reference}
+\label{hero_8c}\index{hero.\+c@{hero.\+c}}
+
+
+hero file  
+
+
+{\ttfamily \#include \char`\"{}hero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}minimap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+Include dependency graph for hero.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hero_8c_a00b6d5150efe88327bf8bf02770e04fc}{init\+Perso} (\hyperlink{structpersonne}{personne} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To initialize the hero along with his stats. \end{DoxyCompactList}\item 
+void \hyperlink{hero_8c_ae0e17ffd99e4414075778aa3d42c8fe0}{afficher\+Perso} (\hyperlink{structpersonne}{personne} p, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the hero. \end{DoxyCompactList}\item 
+void \hyperlink{hero_8c_a12e97096a6da2fdafcb4045f8ee1fc77}{move\+Perso} (\hyperlink{structpersonne}{personne} $\ast$p, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em To move the hero. \end{DoxyCompactList}\item 
+void \hyperlink{hero_8c_ae80a28fc0366b4acf5bb4587589f0b6b}{animer\+Perso} (\hyperlink{structpersonne}{personne} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To animate the hero. \end{DoxyCompactList}\item 
+void \hyperlink{hero_8c_a3d9b7bcbd495ee342902ec003e6ac1bf}{saut} (\hyperlink{structpersonne}{personne} $\ast$p, Uint32 dt)
+\begin{DoxyCompactList}\small\item\em To make the hero jump. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+hero file 
+
+\begin{DoxyAuthor}{Author}
+Sameur Mkaouar 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 03, 2023
+\end{DoxyDate}
+Ici figure le fichier \hyperlink{hero_8c}{hero.\+c} dans lequel il ya le personnage principal 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{hero_8c_ae0e17ffd99e4414075778aa3d42c8fe0}\label{hero_8c_ae0e17ffd99e4414075778aa3d42c8fe0}} 
+\index{hero.\+c@{hero.\+c}!afficher\+Perso@{afficher\+Perso}}
+\index{afficher\+Perso@{afficher\+Perso}!hero.\+c@{hero.\+c}}
+\subsubsection{\texorpdfstring{afficher\+Perso()}{afficherPerso()}}
+{\footnotesize\ttfamily void afficher\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonne}{personne}}]{p,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To show the hero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & hero \\
+\hline
+{\em screen} & ingame screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hero_8c_ae80a28fc0366b4acf5bb4587589f0b6b}\label{hero_8c_ae80a28fc0366b4acf5bb4587589f0b6b}} 
+\index{hero.\+c@{hero.\+c}!animer\+Perso@{animer\+Perso}}
+\index{animer\+Perso@{animer\+Perso}!hero.\+c@{hero.\+c}}
+\subsubsection{\texorpdfstring{animer\+Perso()}{animerPerso()}}
+{\footnotesize\ttfamily void animer\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonne}{personne} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+To animate the hero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & hero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hero_8c_a00b6d5150efe88327bf8bf02770e04fc}\label{hero_8c_a00b6d5150efe88327bf8bf02770e04fc}} 
+\index{hero.\+c@{hero.\+c}!init\+Perso@{init\+Perso}}
+\index{init\+Perso@{init\+Perso}!hero.\+c@{hero.\+c}}
+\subsubsection{\texorpdfstring{init\+Perso()}{initPerso()}}
+{\footnotesize\ttfamily void init\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonne}{personne} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+To initialize the hero along with his stats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & hero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hero_8c_a12e97096a6da2fdafcb4045f8ee1fc77}\label{hero_8c_a12e97096a6da2fdafcb4045f8ee1fc77}} 
+\index{hero.\+c@{hero.\+c}!move\+Perso@{move\+Perso}}
+\index{move\+Perso@{move\+Perso}!hero.\+c@{hero.\+c}}
+\subsubsection{\texorpdfstring{move\+Perso()}{movePerso()}}
+{\footnotesize\ttfamily void move\+Perso (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonne}{personne} $\ast$}]{p,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+To move the hero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & hero \\
+\hline
+{\em dt} & time difference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hero_8c_a3d9b7bcbd495ee342902ec003e6ac1bf}\label{hero_8c_a3d9b7bcbd495ee342902ec003e6ac1bf}} 
+\index{hero.\+c@{hero.\+c}!saut@{saut}}
+\index{saut@{saut}!hero.\+c@{hero.\+c}}
+\subsubsection{\texorpdfstring{saut()}{saut()}}
+{\footnotesize\ttfamily void saut (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonne}{personne} $\ast$}]{p,  }\item[{Uint32}]{dt }\end{DoxyParamCaption})}
+
+
+
+To make the hero jump. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & hero \\
+\hline
+{\em dt} & time difference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

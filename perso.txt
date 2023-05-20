@@ -1,0 +1,5 @@
+image_perso.x: 1328
+image_perso.y: 505
+nb_vies: 480
+score: 1120
+rose: 3

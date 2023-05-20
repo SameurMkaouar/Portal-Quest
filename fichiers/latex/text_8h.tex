@@ -1,0 +1,260 @@
+\hypertarget{text_8h}{}\section{text.\+h File Reference}
+\label{text_8h}\index{text.\+h@{text.\+h}}
+
+
+text file  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+Include dependency graph for text.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtexte}{texte}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{text_8h_a7f99b3e4973a6fecd19a11685b00950f}{initialiser\+\_\+texte} (\hyperlink{structtexte}{texte} $\ast$txte, int x, int y)
+\begin{DoxyCompactList}\small\item\em To initialize text. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_ade00a91ac601482c65ce35f4c101138e}{initialiser\+\_\+texte\+\_\+score} (\hyperlink{structtexte}{texte} $\ast$txte, int x, int y)
+\begin{DoxyCompactList}\small\item\em To initialize text. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_a7d2fbe98dc8456dcc2ede2e9634c3500}{afficher\+\_\+texte\+\_\+volume\+\_\+music} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structtexte}{texte} txte)
+\begin{DoxyCompactList}\small\item\em To show the text which represents the volume of the music. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_a6241866c9d79d63f7b3680000762c459}{afficher\+\_\+texte\+\_\+volume\+\_\+chunk} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structtexte}{texte} txte)
+\begin{DoxyCompactList}\small\item\em To show the text which represents the volume of chunk. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_aa71968772911750b63e37de0d071e25f}{afficher\+\_\+texte\+\_\+fullscreen} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structtexte}{texte} txte)
+\begin{DoxyCompactList}\small\item\em To show the text which of the display mode. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_a35a3a595927a0e65fb4f7ba59dd75c47}{afficher\+\_\+texte\+\_\+windowed} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structtexte}{texte} txte)
+\begin{DoxyCompactList}\small\item\em To show the text which of the display mode. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_aa0374a83e94ba3fd3c44535551fc607d}{afficher\+\_\+texte\+\_\+custom} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structtexte}{texte} txte, char string\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To show a text. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_ae1c4d6fd1c56a125ba670adc7c612b84}{liberer\+\_\+texte} (\hyperlink{structtexte}{texte} txte)
+\begin{DoxyCompactList}\small\item\em To free a memory allocated by a variable of type texte. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_adf090f52a2d896276a6c419a24932e32}{initialiser\+\_\+texte\+\_\+leaderboard} (\hyperlink{structtexte}{texte} $\ast$txte, int x, int y)
+\begin{DoxyCompactList}\small\item\em To initialize the text which of the leaderboard. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_a99055e97f0e05511b785960fe9cc6b05}{fade\+\_\+in\+\_\+text} (S\+D\+L\+\_\+\+Surface $\ast$text\+Surface, S\+D\+L\+\_\+\+Surface $\ast$screen, int x, int y, int duration\+\_\+ms)
+\begin{DoxyCompactList}\small\item\em a simple fade in effect used for showing a text slowly \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+text file 
+
+\begin{DoxyAuthor}{Author}
+Team Shelly Studios 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 03, 2023
+\end{DoxyDate}
+Ici figure le fichier \hyperlink{text_8c}{text.\+c} dans lequel on a traitement de texte 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{text_8h_aa0374a83e94ba3fd3c44535551fc607d}\label{text_8h_aa0374a83e94ba3fd3c44535551fc607d}} 
+\index{text.\+h@{text.\+h}!afficher\+\_\+texte\+\_\+custom@{afficher\+\_\+texte\+\_\+custom}}
+\index{afficher\+\_\+texte\+\_\+custom@{afficher\+\_\+texte\+\_\+custom}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+texte\+\_\+custom()}{afficher\_texte\_custom()}}
+{\footnotesize\ttfamily void afficher\+\_\+texte\+\_\+custom (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structtexte}{texte}}]{txte,  }\item[{char}]{string\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To show a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_aa71968772911750b63e37de0d071e25f}\label{text_8h_aa71968772911750b63e37de0d071e25f}} 
+\index{text.\+h@{text.\+h}!afficher\+\_\+texte\+\_\+fullscreen@{afficher\+\_\+texte\+\_\+fullscreen}}
+\index{afficher\+\_\+texte\+\_\+fullscreen@{afficher\+\_\+texte\+\_\+fullscreen}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+texte\+\_\+fullscreen()}{afficher\_texte\_fullscreen()}}
+{\footnotesize\ttfamily void afficher\+\_\+texte\+\_\+fullscreen (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structtexte}{texte}}]{txte }\end{DoxyParamCaption})}
+
+
+
+To show the text which of the display mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_a6241866c9d79d63f7b3680000762c459}\label{text_8h_a6241866c9d79d63f7b3680000762c459}} 
+\index{text.\+h@{text.\+h}!afficher\+\_\+texte\+\_\+volume\+\_\+chunk@{afficher\+\_\+texte\+\_\+volume\+\_\+chunk}}
+\index{afficher\+\_\+texte\+\_\+volume\+\_\+chunk@{afficher\+\_\+texte\+\_\+volume\+\_\+chunk}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+texte\+\_\+volume\+\_\+chunk()}{afficher\_texte\_volume\_chunk()}}
+{\footnotesize\ttfamily void afficher\+\_\+texte\+\_\+volume\+\_\+chunk (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structtexte}{texte}}]{txte }\end{DoxyParamCaption})}
+
+
+
+To show the text which represents the volume of chunk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_a7d2fbe98dc8456dcc2ede2e9634c3500}\label{text_8h_a7d2fbe98dc8456dcc2ede2e9634c3500}} 
+\index{text.\+h@{text.\+h}!afficher\+\_\+texte\+\_\+volume\+\_\+music@{afficher\+\_\+texte\+\_\+volume\+\_\+music}}
+\index{afficher\+\_\+texte\+\_\+volume\+\_\+music@{afficher\+\_\+texte\+\_\+volume\+\_\+music}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+texte\+\_\+volume\+\_\+music()}{afficher\_texte\_volume\_music()}}
+{\footnotesize\ttfamily void afficher\+\_\+texte\+\_\+volume\+\_\+music (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structtexte}{texte}}]{txte }\end{DoxyParamCaption})}
+
+
+
+To show the text which represents the volume of the music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_a35a3a595927a0e65fb4f7ba59dd75c47}\label{text_8h_a35a3a595927a0e65fb4f7ba59dd75c47}} 
+\index{text.\+h@{text.\+h}!afficher\+\_\+texte\+\_\+windowed@{afficher\+\_\+texte\+\_\+windowed}}
+\index{afficher\+\_\+texte\+\_\+windowed@{afficher\+\_\+texte\+\_\+windowed}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+texte\+\_\+windowed()}{afficher\_texte\_windowed()}}
+{\footnotesize\ttfamily void afficher\+\_\+texte\+\_\+windowed (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structtexte}{texte}}]{txte }\end{DoxyParamCaption})}
+
+
+
+To show the text which of the display mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_a99055e97f0e05511b785960fe9cc6b05}\label{text_8h_a99055e97f0e05511b785960fe9cc6b05}} 
+\index{text.\+h@{text.\+h}!fade\+\_\+in\+\_\+text@{fade\+\_\+in\+\_\+text}}
+\index{fade\+\_\+in\+\_\+text@{fade\+\_\+in\+\_\+text}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{fade\+\_\+in\+\_\+text()}{fade\_in\_text()}}
+{\footnotesize\ttfamily void fade\+\_\+in\+\_\+text (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{text\+Surface,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{duration\+\_\+ms }\end{DoxyParamCaption})}
+
+
+
+a simple fade in effect used for showing a text slowly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_a7f99b3e4973a6fecd19a11685b00950f}\label{text_8h_a7f99b3e4973a6fecd19a11685b00950f}} 
+\index{text.\+h@{text.\+h}!initialiser\+\_\+texte@{initialiser\+\_\+texte}}
+\index{initialiser\+\_\+texte@{initialiser\+\_\+texte}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+texte()}{initialiser\_texte()}}
+{\footnotesize\ttfamily void initialiser\+\_\+texte (\begin{DoxyParamCaption}\item[{\hyperlink{structtexte}{texte} $\ast$}]{txte,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+To initialize text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinates \\
+\hline
+{\em y} & coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_adf090f52a2d896276a6c419a24932e32}\label{text_8h_adf090f52a2d896276a6c419a24932e32}} 
+\index{text.\+h@{text.\+h}!initialiser\+\_\+texte\+\_\+leaderboard@{initialiser\+\_\+texte\+\_\+leaderboard}}
+\index{initialiser\+\_\+texte\+\_\+leaderboard@{initialiser\+\_\+texte\+\_\+leaderboard}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+texte\+\_\+leaderboard()}{initialiser\_texte\_leaderboard()}}
+{\footnotesize\ttfamily void initialiser\+\_\+texte\+\_\+leaderboard (\begin{DoxyParamCaption}\item[{\hyperlink{structtexte}{texte} $\ast$}]{txte,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+To initialize the text which of the leaderboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_ade00a91ac601482c65ce35f4c101138e}\label{text_8h_ade00a91ac601482c65ce35f4c101138e}} 
+\index{text.\+h@{text.\+h}!initialiser\+\_\+texte\+\_\+score@{initialiser\+\_\+texte\+\_\+score}}
+\index{initialiser\+\_\+texte\+\_\+score@{initialiser\+\_\+texte\+\_\+score}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+texte\+\_\+score()}{initialiser\_texte\_score()}}
+{\footnotesize\ttfamily void initialiser\+\_\+texte\+\_\+score (\begin{DoxyParamCaption}\item[{\hyperlink{structtexte}{texte} $\ast$}]{txte,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+To initialize text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinates \\
+\hline
+{\em y} & coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{text_8h_ae1c4d6fd1c56a125ba670adc7c612b84}\label{text_8h_ae1c4d6fd1c56a125ba670adc7c612b84}} 
+\index{text.\+h@{text.\+h}!liberer\+\_\+texte@{liberer\+\_\+texte}}
+\index{liberer\+\_\+texte@{liberer\+\_\+texte}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{liberer\+\_\+texte()}{liberer\_texte()}}
+{\footnotesize\ttfamily void liberer\+\_\+texte (\begin{DoxyParamCaption}\item[{\hyperlink{structtexte}{texte}}]{txte }\end{DoxyParamCaption})}
+
+
+
+To free a memory allocated by a variable of type texte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

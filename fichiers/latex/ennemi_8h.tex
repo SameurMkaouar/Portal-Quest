@@ -1,0 +1,168 @@
+\hypertarget{ennemi_8h}{}\section{ennemi.\+h File Reference}
+\label{ennemi_8h}\index{ennemi.\+h@{ennemi.\+h}}
+
+
+enemy file  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+Include dependency graph for ennemi.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structEnnemi}{Ennemi}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ennemi_8h_a03761fcf3d8da6e50dad96069d21c26b}{init\+Ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$e)
+\begin{DoxyCompactList}\small\item\em To initialize the enemy. \end{DoxyCompactList}\item 
+void \hyperlink{ennemi_8h_a2b03817e4229c98356795d72a8717a3d}{afficher\+Ennemi} (\hyperlink{structEnnemi}{Ennemi} e, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the enemy. \end{DoxyCompactList}\item 
+void \hyperlink{ennemi_8h_a6dd7254964e77c60c8c52a6fe864417b}{animer\+Ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$e)
+\begin{DoxyCompactList}\small\item\em To animate the enemy. \end{DoxyCompactList}\item 
+void \hyperlink{ennemi_8h_ad41f6d0b60b684ed2058b921e8f03e73}{deplacer} (\hyperlink{structEnnemi}{Ennemi} $\ast$e)
+\begin{DoxyCompactList}\small\item\em To move the enemy. \end{DoxyCompactList}\item 
+int \hyperlink{ennemi_8h_ad3b2f99604753031c0b7d1a67e0fb0db}{collision} (S\+D\+L\+\_\+\+Rect E, S\+D\+L\+\_\+\+Rect p)
+\begin{DoxyCompactList}\small\item\em To detect collison the enemy. \end{DoxyCompactList}\item 
+int \hyperlink{ennemi_8h_a6571dc1a14356be2bd907fc4ac3520d5}{collision\+\_\+item} (S\+D\+L\+\_\+\+Rect E, S\+D\+L\+\_\+\+Rect p)
+\begin{DoxyCompactList}\small\item\em To detect collision with other entities (objects) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+enemy file 
+
+\begin{DoxyAuthor}{Author}
+Roua 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 03, 2023
+\end{DoxyDate}
+Ici figure le fichier \hyperlink{ennemi_8c}{ennemi.\+c} dans lequel on a le traitement des entitées secondaires \+:) 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ennemi_8h_a2b03817e4229c98356795d72a8717a3d}\label{ennemi_8h_a2b03817e4229c98356795d72a8717a3d}} 
+\index{ennemi.\+h@{ennemi.\+h}!afficher\+Ennemi@{afficher\+Ennemi}}
+\index{afficher\+Ennemi@{afficher\+Ennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Ennemi()}{afficherEnnemi()}}
+{\footnotesize\ttfamily void afficher\+Ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi}}]{e,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To show the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & enemy entity \\
+\hline
+{\em screen} & ingame screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8h_a6dd7254964e77c60c8c52a6fe864417b}\label{ennemi_8h_a6dd7254964e77c60c8c52a6fe864417b}} 
+\index{ennemi.\+h@{ennemi.\+h}!animer\+Ennemi@{animer\+Ennemi}}
+\index{animer\+Ennemi@{animer\+Ennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection{\texorpdfstring{animer\+Ennemi()}{animerEnnemi()}}
+{\footnotesize\ttfamily void animer\+Ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+To animate the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & enemy entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8h_ad3b2f99604753031c0b7d1a67e0fb0db}\label{ennemi_8h_ad3b2f99604753031c0b7d1a67e0fb0db}} 
+\index{ennemi.\+h@{ennemi.\+h}!collision@{collision}}
+\index{collision@{collision}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily int collision (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{E,  }\item[{S\+D\+L\+\_\+\+Rect}]{p }\end{DoxyParamCaption})}
+
+
+
+To detect collison the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & enemy\textquotesingle{}s position \\
+\hline
+{\em p} & player\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if collision else 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8h_a6571dc1a14356be2bd907fc4ac3520d5}\label{ennemi_8h_a6571dc1a14356be2bd907fc4ac3520d5}} 
+\index{ennemi.\+h@{ennemi.\+h}!collision\+\_\+item@{collision\+\_\+item}}
+\index{collision\+\_\+item@{collision\+\_\+item}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection{\texorpdfstring{collision\+\_\+item()}{collision\_item()}}
+{\footnotesize\ttfamily int collision\+\_\+item (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{E,  }\item[{S\+D\+L\+\_\+\+Rect}]{p }\end{DoxyParamCaption})}
+
+
+
+To detect collision with other entities (objects) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & object position \\
+\hline
+{\em p} & player position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if collision else 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8h_ad41f6d0b60b684ed2058b921e8f03e73}\label{ennemi_8h_ad41f6d0b60b684ed2058b921e8f03e73}} 
+\index{ennemi.\+h@{ennemi.\+h}!deplacer@{deplacer}}
+\index{deplacer@{deplacer}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection{\texorpdfstring{deplacer()}{deplacer()}}
+{\footnotesize\ttfamily void deplacer (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+To move the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & enemy entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8h_a03761fcf3d8da6e50dad96069d21c26b}\label{ennemi_8h_a03761fcf3d8da6e50dad96069d21c26b}} 
+\index{ennemi.\+h@{ennemi.\+h}!init\+Ennemi@{init\+Ennemi}}
+\index{init\+Ennemi@{init\+Ennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection{\texorpdfstring{init\+Ennemi()}{initEnnemi()}}
+{\footnotesize\ttfamily void init\+Ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+To initialize the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & enemy entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

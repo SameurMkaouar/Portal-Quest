@@ -1,0 +1,330 @@
+\hypertarget{image_8c}{}\section{image.\+c File Reference}
+\label{image_8c}\index{image.\+c@{image.\+c}}
+
+
+image file  
+
+
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+Include dependency graph for image.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{image_8c_a49a3ecde2e876b9e6b89a685145212a3}{afficher\+\_\+image\+B\+MP} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structimage}{image} imge)
+\begin{DoxyCompactList}\small\item\em show image \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a0b0823b4f24a648071fa490102b6d481}{afficher\+\_\+image\+B\+TN} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structimage}{image} imge)
+\begin{DoxyCompactList}\small\item\em show an image \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a86667aff6967215069262dd709602c1a}{liberer\+\_\+image} (\hyperlink{structimage}{image} imge)
+\begin{DoxyCompactList}\small\item\em to free a memory allocated by a variable of type image \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a040a3c06a5f3c026d0a009319dce8053}{initialiser\+\_\+animation\+\_\+frog\+\_\+frames} (\hyperlink{structimage}{image} $\ast$imge, int screen\+\_\+h, int screen\+\_\+w, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em an image \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a11a2b0db3d0c9a4beb5746daaa7183ee}{initialiser\+\_\+animation\+\_\+frog} (\hyperlink{structanimation}{animation} $\ast$frog, int screen\+\_\+h, int screen\+\_\+w, \hyperlink{structimage}{image} $\ast$imge1, \hyperlink{structimage}{image} $\ast$imge2, \hyperlink{structimage}{image} $\ast$imge3, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To the images of the animation. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a6b011dd06d772cfe05713acd3660a2ba}{liberer\+\_\+animation} (\hyperlink{structanimation}{animation} frog)
+\begin{DoxyCompactList}\small\item\em To free the images of the animation. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a94a73cfb88aa666588d3479576a24823}{initialiser\+\_\+image\+\_\+background} (\hyperlink{structimage}{image} $\ast$imge, int screen\+\_\+h, int screen\+\_\+w, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize the image of the background. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_ae3e52240d139d762640647c4957546b4}{initialiser\+\_\+image\+\_\+background\+\_\+finale} (\hyperlink{structimage__background}{image\+\_\+background} $\ast$\hyperlink{structbackground}{background}, int screen\+\_\+h, int screen\+\_\+w)
+\begin{DoxyCompactList}\small\item\em To initialize the image of the background. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_acb77ce7ed536288b39d5ae83102f53d6}{liberer\+\_\+background} (\hyperlink{structimage__background}{image\+\_\+background} \hyperlink{structbackground}{background})
+\begin{DoxyCompactList}\small\item\em To free the images of the background of the main menu. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a62db03a74afad5cc0f26d4ba76d4fd6e}{initialiser\+\_\+image\+\_\+bouton} (\hyperlink{structimage}{image} $\ast$imgbtn, int x, int y, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize an image. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a7aee4555d61d8e61187957b176b64778}{initialiser\+\_\+image\+\_\+sprite} (\hyperlink{structimage}{image} $\ast$imgbtn, int x, int y, int h, int w, char nom\+Image\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em To initialize an image. \end{DoxyCompactList}\item 
+void \hyperlink{image_8c_a87e32b7cb423487c64eecf2583745c89}{liberer\+\_\+bouton} (\hyperlink{structimage__bouton}{image\+\_\+bouton} bouton)
+\begin{DoxyCompactList}\small\item\em To free the memory of image bouton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+image file 
+
+\begin{DoxyAuthor}{Author}
+Team Shelly Studios 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 03, 2023
+\end{DoxyDate}
+Ici figure le fichier \hyperlink{image_8c}{image.\+c} dans lequel on a le traitement des images 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{image_8c_a49a3ecde2e876b9e6b89a685145212a3}\label{image_8c_a49a3ecde2e876b9e6b89a685145212a3}} 
+\index{image.\+c@{image.\+c}!afficher\+\_\+image\+B\+MP@{afficher\+\_\+image\+B\+MP}}
+\index{afficher\+\_\+image\+B\+MP@{afficher\+\_\+image\+B\+MP}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+image\+B\+M\+P()}{afficher\_imageBMP()}}
+{\footnotesize\ttfamily void afficher\+\_\+image\+B\+MP (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structimage}{image}}]{imge }\end{DoxyParamCaption})}
+
+
+
+show image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em image} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a0b0823b4f24a648071fa490102b6d481}\label{image_8c_a0b0823b4f24a648071fa490102b6d481}} 
+\index{image.\+c@{image.\+c}!afficher\+\_\+image\+B\+TN@{afficher\+\_\+image\+B\+TN}}
+\index{afficher\+\_\+image\+B\+TN@{afficher\+\_\+image\+B\+TN}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+image\+B\+T\+N()}{afficher\_imageBTN()}}
+{\footnotesize\ttfamily void afficher\+\_\+image\+B\+TN (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structimage}{image}}]{imge }\end{DoxyParamCaption})}
+
+
+
+show an image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a11a2b0db3d0c9a4beb5746daaa7183ee}\label{image_8c_a11a2b0db3d0c9a4beb5746daaa7183ee}} 
+\index{image.\+c@{image.\+c}!initialiser\+\_\+animation\+\_\+frog@{initialiser\+\_\+animation\+\_\+frog}}
+\index{initialiser\+\_\+animation\+\_\+frog@{initialiser\+\_\+animation\+\_\+frog}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+animation\+\_\+frog()}{initialiser\_animation\_frog()}}
+{\footnotesize\ttfamily void initialiser\+\_\+animation\+\_\+frog (\begin{DoxyParamCaption}\item[{\hyperlink{structanimation}{animation} $\ast$}]{frog,  }\item[{int}]{screen\+\_\+h,  }\item[{int}]{screen\+\_\+w,  }\item[{\hyperlink{structimage}{image} $\ast$}]{imge1,  }\item[{\hyperlink{structimage}{image} $\ast$}]{imge2,  }\item[{\hyperlink{structimage}{image} $\ast$}]{imge3,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To the images of the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation} & \\
+\hline
+{\em the} & height of the image \\
+\hline
+{\em the} & width of the image \\
+\hline
+{\em image} & 1 \\
+\hline
+{\em image} & 2 \\
+\hline
+{\em image} & 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a040a3c06a5f3c026d0a009319dce8053}\label{image_8c_a040a3c06a5f3c026d0a009319dce8053}} 
+\index{image.\+c@{image.\+c}!initialiser\+\_\+animation\+\_\+frog\+\_\+frames@{initialiser\+\_\+animation\+\_\+frog\+\_\+frames}}
+\index{initialiser\+\_\+animation\+\_\+frog\+\_\+frames@{initialiser\+\_\+animation\+\_\+frog\+\_\+frames}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+animation\+\_\+frog\+\_\+frames()}{initialiser\_animation\_frog\_frames()}}
+{\footnotesize\ttfamily void initialiser\+\_\+animation\+\_\+frog\+\_\+frames (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imge,  }\item[{int}]{screen\+\_\+h,  }\item[{int}]{screen\+\_\+w,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+an image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em the} & height of the image \\
+\hline
+{\em the} & width of the image \\
+\hline
+{\em the} & url of the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a94a73cfb88aa666588d3479576a24823}\label{image_8c_a94a73cfb88aa666588d3479576a24823}} 
+\index{image.\+c@{image.\+c}!initialiser\+\_\+image\+\_\+background@{initialiser\+\_\+image\+\_\+background}}
+\index{initialiser\+\_\+image\+\_\+background@{initialiser\+\_\+image\+\_\+background}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+background()}{initialiser\_image\_background()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+background (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imge,  }\item[{int}]{screen\+\_\+h,  }\item[{int}]{screen\+\_\+w,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize the image of the background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em screen} & height \\
+\hline
+{\em screen} & width \\
+\hline
+{\em the} & url of the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_ae3e52240d139d762640647c4957546b4}\label{image_8c_ae3e52240d139d762640647c4957546b4}} 
+\index{image.\+c@{image.\+c}!initialiser\+\_\+image\+\_\+background\+\_\+finale@{initialiser\+\_\+image\+\_\+background\+\_\+finale}}
+\index{initialiser\+\_\+image\+\_\+background\+\_\+finale@{initialiser\+\_\+image\+\_\+background\+\_\+finale}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+background\+\_\+finale()}{initialiser\_image\_background\_finale()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+background\+\_\+finale (\begin{DoxyParamCaption}\item[{\hyperlink{structimage__background}{image\+\_\+background} $\ast$}]{background,  }\item[{int}]{screen\+\_\+h,  }\item[{int}]{screen\+\_\+w }\end{DoxyParamCaption})}
+
+
+
+To initialize the image of the background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em screen} & height \\
+\hline
+{\em screen} & width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a62db03a74afad5cc0f26d4ba76d4fd6e}\label{image_8c_a62db03a74afad5cc0f26d4ba76d4fd6e}} 
+\index{image.\+c@{image.\+c}!initialiser\+\_\+image\+\_\+bouton@{initialiser\+\_\+image\+\_\+bouton}}
+\index{initialiser\+\_\+image\+\_\+bouton@{initialiser\+\_\+image\+\_\+bouton}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+bouton()}{initialiser\_image\_bouton()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+bouton (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imgbtn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinates \\
+\hline
+{\em y} & coordinates \\
+\hline
+{\em url} & image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a7aee4555d61d8e61187957b176b64778}\label{image_8c_a7aee4555d61d8e61187957b176b64778}} 
+\index{image.\+c@{image.\+c}!initialiser\+\_\+image\+\_\+sprite@{initialiser\+\_\+image\+\_\+sprite}}
+\index{initialiser\+\_\+image\+\_\+sprite@{initialiser\+\_\+image\+\_\+sprite}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+image\+\_\+sprite()}{initialiser\_image\_sprite()}}
+{\footnotesize\ttfamily void initialiser\+\_\+image\+\_\+sprite (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image} $\ast$}]{imgbtn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{h,  }\item[{int}]{w,  }\item[{char}]{nom\+Image\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+To initialize an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinates \\
+\hline
+{\em y} & coordinates \\
+\hline
+{\em height} & \\
+\hline
+{\em width} & \\
+\hline
+{\em url} & image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a6b011dd06d772cfe05713acd3660a2ba}\label{image_8c_a6b011dd06d772cfe05713acd3660a2ba}} 
+\index{image.\+c@{image.\+c}!liberer\+\_\+animation@{liberer\+\_\+animation}}
+\index{liberer\+\_\+animation@{liberer\+\_\+animation}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{liberer\+\_\+animation()}{liberer\_animation()}}
+{\footnotesize\ttfamily void liberer\+\_\+animation (\begin{DoxyParamCaption}\item[{\hyperlink{structanimation}{animation}}]{frog }\end{DoxyParamCaption})}
+
+
+
+To free the images of the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation} & \\
+\hline
+{\em the} & height of the image \\
+\hline
+{\em the} & width of the image \\
+\hline
+{\em image} & 1 \\
+\hline
+{\em image} & 2 \\
+\hline
+{\em image} & 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_acb77ce7ed536288b39d5ae83102f53d6}\label{image_8c_acb77ce7ed536288b39d5ae83102f53d6}} 
+\index{image.\+c@{image.\+c}!liberer\+\_\+background@{liberer\+\_\+background}}
+\index{liberer\+\_\+background@{liberer\+\_\+background}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{liberer\+\_\+background()}{liberer\_background()}}
+{\footnotesize\ttfamily void liberer\+\_\+background (\begin{DoxyParamCaption}\item[{\hyperlink{structimage__background}{image\+\_\+background}}]{background }\end{DoxyParamCaption})}
+
+
+
+To free the images of the background of the main menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em screen} & height \\
+\hline
+{\em screen} & width \\
+\hline
+{\em the} & url of the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a87e32b7cb423487c64eecf2583745c89}\label{image_8c_a87e32b7cb423487c64eecf2583745c89}} 
+\index{image.\+c@{image.\+c}!liberer\+\_\+bouton@{liberer\+\_\+bouton}}
+\index{liberer\+\_\+bouton@{liberer\+\_\+bouton}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{liberer\+\_\+bouton()}{liberer\_bouton()}}
+{\footnotesize\ttfamily void liberer\+\_\+bouton (\begin{DoxyParamCaption}\item[{\hyperlink{structimage__bouton}{image\+\_\+bouton}}]{bouton }\end{DoxyParamCaption})}
+
+
+
+To free the memory of image bouton. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{image_8c_a86667aff6967215069262dd709602c1a}\label{image_8c_a86667aff6967215069262dd709602c1a}} 
+\index{image.\+c@{image.\+c}!liberer\+\_\+image@{liberer\+\_\+image}}
+\index{liberer\+\_\+image@{liberer\+\_\+image}!image.\+c@{image.\+c}}
+\subsubsection{\texorpdfstring{liberer\+\_\+image()}{liberer\_image()}}
+{\footnotesize\ttfamily void liberer\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structimage}{image}}]{imge }\end{DoxyParamCaption})}
+
+
+
+to free a memory allocated by a variable of type image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em texte} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

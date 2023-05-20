@@ -1,0 +1,192 @@
+\hypertarget{minimap_8h}{}\section{minimap.\+h File Reference}
+\label{minimap_8h}\index{minimap.\+h@{minimap.\+h}}
+
+
+minimap file  
+
+
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}hero.\+h\char`\"{}}\newline
+Include dependency graph for minimap.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtextemelek}{textemelek}
+\item 
+struct \hyperlink{structimagemelek}{imagemelek}
+\item 
+struct \hyperlink{structminimap}{minimap}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{minimap_8h_a27cddfd509d28b4b2b0b44c093fac090}\label{minimap_8h_a27cddfd509d28b4b2b0b44c093fac090}} 
+\#define {\bfseries S\+C\+R\+E\+E\+N\+\_\+H}~1600
+\item 
+\mbox{\Hypertarget{minimap_8h_a9b6bc9242882d1e758e06ed751a2e8ec}\label{minimap_8h_a9b6bc9242882d1e758e06ed751a2e8ec}} 
+\#define {\bfseries S\+C\+R\+E\+E\+N\+\_\+W}~800
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{minimap_8h_a4871f9a909d85c2253b37f724d9eb395}{M\+A\+J\+Minimap} (\hyperlink{structpersonne}{personne} p, \hyperlink{structminimap}{minimap} $\ast$m, S\+D\+L\+\_\+\+Rect camera, int redimensionnement)
+\begin{DoxyCompactList}\small\item\em To update the minimap. \end{DoxyCompactList}\item 
+void \hyperlink{minimap_8h_a9309f1fe9c9c8bc62ef300af0e080b4e}{afficher} (\hyperlink{structminimap}{minimap} m, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the minimap. \end{DoxyCompactList}\item 
+void \hyperlink{minimap_8h_a1ebba30f85166270f80b1f29456addc1}{Liberer} (\hyperlink{structminimap}{minimap} $\ast$m)
+\begin{DoxyCompactList}\small\item\em To free the minimap. \end{DoxyCompactList}\item 
+void \hyperlink{minimap_8h_a338e9d7202c1bf4de34aa592da6ec871}{M\+A\+Jobject} (\hyperlink{structimagemelek}{imagemelek} imge, \hyperlink{structminimap}{minimap} $\ast$m, S\+D\+L\+\_\+\+Rect camera, int redimensionnement, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To update the objects. \end{DoxyCompactList}\item 
+void \hyperlink{minimap_8h_a85af307ca337476408683ccc4de50487}{afficher\+\_\+texte\+\_\+temps} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structtextemelek}{textemelek} txte, int time)
+\begin{DoxyCompactList}\small\item\em To show the time text. \end{DoxyCompactList}\item 
+void \hyperlink{minimap_8h_a5c14d6b6d9b624238923039ab28049a0}{initialiser\+\_\+texte\+\_\+temps} (\hyperlink{structtextemelek}{textemelek} $\ast$txte)
+\begin{DoxyCompactList}\small\item\em To initialize the clock text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+minimap file 
+
+\begin{DoxyAuthor}{Author}
+Melek 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 03, 2023
+\end{DoxyDate}
+Ici figure le fichier \hyperlink{minimap_8h}{minimap.\+h} dans lequel il ya minimap 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{minimap_8h_a9309f1fe9c9c8bc62ef300af0e080b4e}\label{minimap_8h_a9309f1fe9c9c8bc62ef300af0e080b4e}} 
+\index{minimap.\+h@{minimap.\+h}!afficher@{afficher}}
+\index{afficher@{afficher}!minimap.\+h@{minimap.\+h}}
+\subsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{\hyperlink{structminimap}{minimap}}]{m,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To show the minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & minimap \\
+\hline
+{\em screen} & ingame screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{minimap_8h_a85af307ca337476408683ccc4de50487}\label{minimap_8h_a85af307ca337476408683ccc4de50487}} 
+\index{minimap.\+h@{minimap.\+h}!afficher\+\_\+texte\+\_\+temps@{afficher\+\_\+texte\+\_\+temps}}
+\index{afficher\+\_\+texte\+\_\+temps@{afficher\+\_\+texte\+\_\+temps}!minimap.\+h@{minimap.\+h}}
+\subsubsection{\texorpdfstring{afficher\+\_\+texte\+\_\+temps()}{afficher\_texte\_temps()}}
+{\footnotesize\ttfamily void afficher\+\_\+texte\+\_\+temps (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structtextemelek}{textemelek}}]{txte,  }\item[{int}]{time }\end{DoxyParamCaption})}
+
+
+
+To show the time text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & ingame screen \\
+\hline
+{\em txte} & time in str form \\
+\hline
+{\em time} & time in int form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{minimap_8h_a5c14d6b6d9b624238923039ab28049a0}\label{minimap_8h_a5c14d6b6d9b624238923039ab28049a0}} 
+\index{minimap.\+h@{minimap.\+h}!initialiser\+\_\+texte\+\_\+temps@{initialiser\+\_\+texte\+\_\+temps}}
+\index{initialiser\+\_\+texte\+\_\+temps@{initialiser\+\_\+texte\+\_\+temps}!minimap.\+h@{minimap.\+h}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+texte\+\_\+temps()}{initialiser\_texte\_temps()}}
+{\footnotesize\ttfamily void initialiser\+\_\+texte\+\_\+temps (\begin{DoxyParamCaption}\item[{\hyperlink{structtextemelek}{textemelek} $\ast$}]{txte }\end{DoxyParamCaption})}
+
+
+
+To initialize the clock text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em txte} & time text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{minimap_8h_a1ebba30f85166270f80b1f29456addc1}\label{minimap_8h_a1ebba30f85166270f80b1f29456addc1}} 
+\index{minimap.\+h@{minimap.\+h}!Liberer@{Liberer}}
+\index{Liberer@{Liberer}!minimap.\+h@{minimap.\+h}}
+\subsubsection{\texorpdfstring{Liberer()}{Liberer()}}
+{\footnotesize\ttfamily void Liberer (\begin{DoxyParamCaption}\item[{\hyperlink{structminimap}{minimap} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+To free the minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & minimap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{minimap_8h_a4871f9a909d85c2253b37f724d9eb395}\label{minimap_8h_a4871f9a909d85c2253b37f724d9eb395}} 
+\index{minimap.\+h@{minimap.\+h}!M\+A\+J\+Minimap@{M\+A\+J\+Minimap}}
+\index{M\+A\+J\+Minimap@{M\+A\+J\+Minimap}!minimap.\+h@{minimap.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+J\+Minimap()}{MAJMinimap()}}
+{\footnotesize\ttfamily void M\+A\+J\+Minimap (\begin{DoxyParamCaption}\item[{\hyperlink{structpersonne}{personne}}]{p,  }\item[{\hyperlink{structminimap}{minimap} $\ast$}]{m,  }\item[{S\+D\+L\+\_\+\+Rect}]{camera,  }\item[{int}]{redimensionnement }\end{DoxyParamCaption})}
+
+
+
+To update the minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & hero \\
+\hline
+{\em m} & minimap stucture \\
+\hline
+{\em camera} & ingame camera \\
+\hline
+{\em redimensionnement} & resizing factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{minimap_8h_a338e9d7202c1bf4de34aa592da6ec871}\label{minimap_8h_a338e9d7202c1bf4de34aa592da6ec871}} 
+\index{minimap.\+h@{minimap.\+h}!M\+A\+Jobject@{M\+A\+Jobject}}
+\index{M\+A\+Jobject@{M\+A\+Jobject}!minimap.\+h@{minimap.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+Jobject()}{MAJobject()}}
+{\footnotesize\ttfamily void M\+A\+Jobject (\begin{DoxyParamCaption}\item[{\hyperlink{structimagemelek}{imagemelek}}]{imge,  }\item[{\hyperlink{structminimap}{minimap} $\ast$}]{m,  }\item[{S\+D\+L\+\_\+\+Rect}]{camera,  }\item[{int}]{redimensionnement,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To update the objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & objects image \\
+\hline
+{\em camera} & ingame camera \\
+\hline
+{\em redimensionnement} & object resizing factor \\
+\hline
+{\em screen} & ingame screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
